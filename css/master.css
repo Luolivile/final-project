@@ -1,0 +1,102 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.giraffe {
+  background: url("../images/giraffe.jpeg")  no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-position: top;
+  overflow: hidden;
+  display: inline-block;
+}
+.cow {
+  background: url("../images/cow.jpeg")  no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-position: top;
+  overflow: hidden;
+  display: inline-block;
+}
+.human {
+  background: url("../images/human.jpeg")  no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-position: top;
+  overflow: hidden;
+  display: inline-block;
+}
+.chipanzee {
+  background: url("../images/chipanzee.jpeg")  no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-position: top;
+  overflow: hidden;
+  display: inline-block;
+}
+.rabbit {
+  background: url("../images/rabbit.jpeg")  no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-position: top;
+  overflow: hidden;
+  display: inline-block;
+}
+.dog {
+  background: url("../images/dog.jpeg")  no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-position: top;
+  overflow: hidden;
+  display: inline-block;
+}
+.cat {
+  background: url("../images/cat.jpeg")  no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-position: top;
+  overflow: hidden;
+  display: inline-block;
+}
+.tiger {
+  background: url("../images/tiger.jpeg")  no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-position: top;
+  overflow: hidden;
+  display: inline-block;
+}
+.koala {
+  background: url("../images/koala.jpeg")  no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-position: top;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#wrapper {
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 940px;
+  min-width: 720px;
+  white-space: nowrap;
+}
