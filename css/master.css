@@ -1,102 +1,70 @@
 body {
   font-family: 'Noto Sans', sans-serif;
 }
-
-.giraffe {
-  background: url("../images/giraffe.jpeg")  no-repeat center center;
-  background-size: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-position: top;
-  overflow: hidden;
-  display: inline-block;
+header {
+  font-size: 1.5em;
+  text-align: center;
 }
-.cow {
-  background: url("../images/cow.jpeg")  no-repeat center center;
-  background-size: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-position: top;
-  overflow: hidden;
-  display: inline-block;
-}
-.human {
-  background: url("../images/human.jpeg")  no-repeat center center;
-  background-size: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-position: top;
-  overflow: hidden;
-  display: inline-block;
-}
-.chipanzee {
-  background: url("../images/chipanzee.jpeg")  no-repeat center center;
-  background-size: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-position: top;
-  overflow: hidden;
-  display: inline-block;
-}
-.rabbit {
-  background: url("../images/rabbit.jpeg")  no-repeat center center;
-  background-size: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-position: top;
-  overflow: hidden;
-  display: inline-block;
-}
-.dog {
-  background: url("../images/dog.jpeg")  no-repeat center center;
-  background-size: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-position: top;
-  overflow: hidden;
-  display: inline-block;
-}
-.cat {
-  background: url("../images/cat.jpeg")  no-repeat center center;
-  background-size: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-position: top;
-  overflow: hidden;
-  display: inline-block;
-}
-.tiger {
-  background: url("../images/tiger.jpeg")  no-repeat center center;
-  background-size: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-position: top;
-  overflow: hidden;
-  display: inline-block;
-}
-.koala {
-  background: url("../images/koala.jpeg")  no-repeat center center;
-  background-size: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-position: top;
-  overflow: hidden;
-  display: inline-block;
-}
-
 #wrapper {
-  display: inline-block;
-  vertical-align: baseline;
-  max-width: 940px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-direction: row wrap;
+  max-width: 1600px;
   min-width: 720px;
   white-space: nowrap;
+  height: 700px;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.thumb {
+  width: 11%;
+}
+
+.inner {
+  padding-bottom: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+}
+
+#giraffe {
+  background-image: url("../images/giraffe.jpg");
+}
+
+#cow {
+  background-image: url("../images/cow.jpg");
+}
+
+#human {
+  background-image: url("../images/human.jpg");
+}
+
+#chipanzee {
+  background-image: url("../images/chipanzee.jpg");
+}
+
+#rabbit {
+  background-image: url("../images/rabbit.jpg")  ;
+}
+
+#dog {
+  background-image: url("../images/dog.jpg");
+}
+
+#cat {
+  background-image: url("../images/cat.jpg");
+}
+
+#tiger {
+  background-image: url("../images/tiger.jpeg");
+}
+
+#koala {
+  background-image: url("../images/koala.jpg");
 }

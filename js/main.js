@@ -1,4 +1,4 @@
-var photo = document.querySelector('#thumb');
+var photo = document.querySelector('.inner');
 
 photo.addEventListener("mouseover", function() {
     photo.style.width = '400px';
