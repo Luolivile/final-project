@@ -1,14 +1,7 @@
-var photo = document.querySelector('.inner');
+var thumbs =  document.getElementsByClassName('thumb');
 
-photo.addEventListener("mouseover", function() {
-    photo.style.width = '400px';
-    photo.style.height = '400px';
-    photo.style.borderRadius = '200px';
+for (i=0; i<thumbs.length; i++) {
+  thumbs[i].addEventListener('mouseover', function (evt) {
+    document.body.style.backgroundColor = evt.currentTarget.dataset.color
   });
-
-photo.addEventListener('mouseout', function() {
-  photo.style.width = '200px';
-  photo.style.height = '400px';
-  photo.style.borderRadius = '200px';
-});
-  // reset the color after a short delay
+}

@@ -1,28 +1,29 @@
 body {
   font-family: 'Noto Sans', sans-serif;
+  transition: background-color .5s ease-in-out;
 }
 header {
   font-size: 1.5em;
   text-align: center;
 }
 #wrapper {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
   max-width: 1600px;
   min-width: 720px;
   white-space: nowrap;
   height: 700px;
-  -webkit-align-items: center;
-  -ms-align-items: center;
   align-items: center;
+  justify-content: space-around;
 }
 
 .thumb {
-  width: 11%;
+  width: 10%;
+  transition: all .2s ease-in-out;
+}
+
+.thumb:hover {
+  width: 20%;
 }
 
 .inner {
@@ -34,37 +35,37 @@ header {
 }
 
 #giraffe {
-  background-image: url("../images/giraffe.jpg");
+  background-image: url("../images/giraffe2.jpg");
 }
 
 #cow {
-  background-image: url("../images/cow.jpg");
+  background-image: url("../images/cow2.jpg");
 }
 
 #human {
-  background-image: url("../images/human.jpg");
+  background-image: url("../images/human2.jpg");
 }
 
 #chipanzee {
-  background-image: url("../images/chipanzee.jpg");
+  background-image: url("../images/chipanzee2.jpg");
 }
 
 #rabbit {
-  background-image: url("../images/rabbit.jpg")  ;
+  background-image: url("../images/rabbit2.jpeg")  ;
 }
 
 #dog {
-  background-image: url("../images/dog.jpg");
+  background-image: url("../images/dog2.jpg");
 }
 
 #cat {
-  background-image: url("../images/cat.jpg");
+  background-image: url("../images/cat2.jpg");
 }
 
 #tiger {
-  background-image: url("../images/tiger.jpeg");
+  background-image: url("../images/tiger2.jpg");
 }
 
 #koala {
-  background-image: url("../images/koala.jpg");
+  background-image: url("../images/koala2.jpg");
 }
