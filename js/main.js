@@ -13,6 +13,7 @@ for (i=0; i<thumbs.length; i++) {
     //remove class selected
     if (this.classList.contains('selected')) {
       this.classList.remove('selected');
+      document.body.classList.remove('thumbSelected');
 
     } else {
         var selected = document.querySelector('.selected')
@@ -20,8 +21,24 @@ for (i=0; i<thumbs.length; i++) {
           selected.classList.remove('selected');
         }
         this.classList.add('selected');
+
+        document.body.classList.add('thumbSelected');
     }
   })
-    }
+}
 
-  
+    document.querySelector('#close').addEventListener('click', function() {
+        this.classList.contains('thumbSelected');
+        this.classList.remove('thumbSelected');
+        document.body.classList.remove('thumbSelected');
+        document.querySelector('.thumb').classList.remove('selected');
+    })
+
+  //  document.querySelector('#right').addEventListener('click', function(){
+  //     for (i=0; i<thumbs.length; i++) {
+  //       if (thumbs[i].classList.contains('selected')) {
+  //         this.classList.remove('selected');
+  //         thumbs[i+1].classList.add('selected');
+  //       }
+  //     }
+  //  })

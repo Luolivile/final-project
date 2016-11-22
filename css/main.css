@@ -1,0 +1,152 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#wrapper{
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  line-height: 0.5;
+  margin-left: 20px;
+  margin-top: -5px;
+}
+footer h2 {
+  font-family:  baskerville;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
+}
+footer p {
+  font-family: baskerville;
+  font-weight: 200;
+  font-size: 18px;
+  color: #a9a9a9;
+}
+
+.row {
+  display: table-row;
+}
+
+.textbox {
+  font-family: baskerville;
+  color: #fff;
+  display: none;
+}
+
+.thumb {
+  display: table-cell;
+  width: calc(100%/3);
+  height: calc(100%/3);
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  display: none;
+}
+.scrim {
+  display: none;
+}
+#close {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  transition: 1s;
+}
+
+#right {
+  position: absolute;
+  right: 70px;
+  top: 50%;
+}
+
+#left {
+  position: absolute;
+  top: 50%;
+  left: 70px;
+}
+
+#giraffe {
+  background-image: url("../images/giraffe_sleeping.jpg");
+}
+
+#cow {
+  background-image: url("../images/cow_sleeping.jpg");
+}
+
+#human {
+  background-image: url("../images/human_sleeping.jpg");
+}
+
+
+#chipanzee {
+  background-image: url("../images/chipanzee_sleeping.jpg");
+}
+
+#rabbit {
+  background-image: url("../images/rabbit_sleeping.jpeg")  ;
+}
+
+#dog {
+  background-image: url("../images/dog_sleeping.jpg");
+}
+
+#cat {
+  background-image: url("../images/cat_sleeping.jpg");
+}
+
+
+#tiger {
+  background-image: url("../images/tiger_sleeping.jpg");
+}
+
+#koala {
+  background-image: url("../images/koala_sleeping.jpg");
+}
+
+#giraffe:hover, #cow:hover, #human:hover, #chipanzee:hover, #dog:hover, #rabbit:hover, #cat:hover, #tiger:hover, #koala:hover {
+  box-shadow: 0 10px 50px rgba(0,0,0,0.75);
+  transition: 0.2s;
+  z-index: 2;
+}
+
+body.thumbSelected .thumb {
+  width: 0;
+  height: 0;
+}
+
+body.thumbSelected img {
+  display: block;
+  z-index: 3;
+}
+
+.thumb.selected .textbox {
+  display: block;
+  position: absolute;
+  width: 420px;
+  top: 70px;
+  left: 70px;
+  z-index: 3;
+}
+
+body.thumbSelected .thumb.selected {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+body.thumbSelected .scrim {
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
