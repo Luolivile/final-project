@@ -34,11 +34,12 @@ for (i=0; i<thumbs.length; i++) {
         document.querySelector('.thumb').classList.remove('selected');
     })
 
-  //  document.querySelector('#right').addEventListener('click', function(){
-  //     for (i=0; i<thumbs.length; i++) {
-  //       if (thumbs[i].classList.contains('selected')) {
-  //         this.classList.remove('selected');
-  //         thumbs[i+1].classList.add('selected');
-  //       }
-  //     }
-  //  })
+   document.querySelector('#right').addEventListener('click', function(){
+      for (i=0; i<thumbs.length; i++) {
+        if (thumbs[i].classList.contains('selected')) {
+          this.classList.remove('selected');
+          thumbs[i+1].classList.add('selected');
+          break;
+        }
+      }
+   })
