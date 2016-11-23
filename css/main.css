@@ -31,19 +31,60 @@ footer p {
   display: table-row;
 }
 
-.textbox {
-  font-family: baskerville;
-  color: #fff;
-  display: none;
-}
-
 .thumb {
+  position: relative;
   display: table-cell;
   width: calc(100%/3);
   height: calc(100%/3);
   background-size: cover;
   background-position: center;
-  transition: 1s;
+  transition: height .75s ease-in-out, width .75s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.thumb:hover {
+  box-shadow: 0 10px 50px rgba(0,0,0,0.75);
+  z-index: 2;
+}
+
+body.thumbSelected .thumb {
+  width: 0;
+  height: 0;
+}
+
+body.thumbSelected .thumb.selected {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.scrim {
+  height: 100%;
+  background: rgba(0,0,0,.25);
+  transition: background-color .75s ease-in-out;
+}
+
+body.thumbSelected .scrim {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.textbox {
+  font-family: 18px Baskerville, serif;
+  color: #fff;
+  opacity: 0;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  width: 420px;
+  transition: opacity .2s ease-in-out;
+}
+
+.thumb.selected .textbox {
+  opacity: 1;
+  transition: opacity .2s ease-in-out .75s;
+}
+
+.control {
+  z-index: 10;
 }
 
 img {
@@ -51,10 +92,14 @@ img {
   height: 40px;
   background-color: transparent;
   display: none;
+  z-index: 10;
 }
-.scrim {
-  display: none;
+
+body.thumbSelected img {
+  display: block;
+  z-index: 3;
 }
+
 #close {
   position: absolute;
   top: 70px;
@@ -103,50 +148,10 @@ img {
   background-image: url("../images/cat_sleeping.jpg");
 }
 
-
 #tiger {
   background-image: url("../images/tiger_sleeping.jpg");
 }
 
 #koala {
   background-image: url("../images/koala_sleeping.jpg");
-}
-
-#giraffe:hover, #cow:hover, #human:hover, #chipanzee:hover, #dog:hover, #rabbit:hover, #cat:hover, #tiger:hover, #koala:hover {
-  box-shadow: 0 10px 50px rgba(0,0,0,0.75);
-  transition: 0.2s;
-  z-index: 2;
-}
-
-body.thumbSelected .thumb {
-  width: 0;
-  height: 0;
-}
-
-body.thumbSelected img {
-  display: block;
-  z-index: 3;
-}
-
-.thumb.selected .textbox {
-  display: block;
-  position: absolute;
-  width: 420px;
-  top: 70px;
-  left: 70px;
-  z-index: 3;
-}
-
-body.thumbSelected .thumb.selected {
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-
-body.thumbSelected .scrim {
-  display: block;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 2;
-  height: 100%;
-  width: 100%;
 }
