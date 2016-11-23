@@ -48,3 +48,18 @@ for (i=0; i<thumbs.length; i++) {
         }
       }
    })
+
+   document.querySelector('#left').addEventListener('click', function (){
+     for (i = thumbs.length - 1; i >= 0; i--) {
+       if (thumbs[i].classList.contains('selected')) {
+         thumbs[i].classList.remove('selected');
+         if (i-1 <= 0) {
+           var previous = thumbs.length -1  
+         } else {
+           var previous = i-1
+         }
+         thumbs[previous].classList.add('selected');
+         break;
+       }
+     }
+   })
