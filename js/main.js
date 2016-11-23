@@ -38,7 +38,12 @@ for (i=0; i<thumbs.length; i++) {
       for (i=0; i<thumbs.length; i++) {
         if (thumbs[i].classList.contains('selected')) {
           thumbs[i].classList.remove('selected');
-          thumbs[i+1].classList.add('selected');
+          if (i+1 >= thumbs.length) {
+            var next = 0
+          } else {
+            var next = i+1
+          }
+          thumbs[next].classList.add('selected');
           break;
         }
       }
