@@ -2,31 +2,35 @@
 //get all thumbs
 var thumbs =  document.getElementsByClassName('thumb');
 
-//changes backgorund color on hover
+//changes background color on hover
 for (i=0; i<thumbs.length; i++) {
   thumbs[i].addEventListener('mouseover', function (evt) {
     document.body.style.backgroundColor = evt.currentTarget.dataset.color
   });
 
 
-//changes size on click
+  //changes size on click
   thumbs[i].addEventListener('click', function(){
-    //remove class selected
+    // clicked on selected thumb
     if (this.classList.contains('selected')) {
       this.classList.remove('selected');
+      // TODO: remove 'rowSelected' class from parent row
       document.body.classList.remove('thumbSelected');
 
+    // click on non-selected thumb
     } else {
         var selected = document.querySelector('.selected')
         if (selected !== null) {
           selected.classList.remove('selected');
         }
         this.classList.add('selected');
-
+        // TODO: add 'rowSelected' class to parent row
         document.body.classList.add('thumbSelected');
     }
   })
 }
+
+// fix the indentation below this point.
 
     document.querySelector('#close').addEventListener('click', function() {
         this.classList.contains('thumbSelected');
