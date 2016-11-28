@@ -15,7 +15,7 @@ for (i=0; i<thumbs.length; i++) {
     if (this.classList.contains('selected')) {
       this.classList.remove('selected');
       document.body.classList.remove('thumbSelected');
-      document.querySelector('.row').classList.remove('rowSelected');
+      this.querySelector('.rowSelected').classList.remove('rowSelected');
 
     } else {
         var selected = document.querySelector('.selected')
@@ -23,7 +23,7 @@ for (i=0; i<thumbs.length; i++) {
           selected.classList.remove('selected');
         }
         this.classList.add('selected');
-        document.querySelector('.row').classList.add('rowSelected');
+        this.parentNode.classList.add('rowSelected');
         document.body.classList.add('thumbSelected');
     }
   })

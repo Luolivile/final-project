@@ -28,7 +28,7 @@ footer p {
   color: #a9a9a9;
 }
 
-.row {
+.row1, .row2, .row3 {
   display: table-row;
 }
 
@@ -58,8 +58,9 @@ body.thumbSelected .thumb.selected {
   z-index: 1;
 }
 
-.selectedRow > .thumb {
-  height: 100% }
+body.thumbSelected .rowSelected .thumb {
+ height: 100%;
+}
 
 .scrim {
   height: 100%;
