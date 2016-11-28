@@ -28,7 +28,7 @@ footer p {
   color: #a9a9a9;
 }
 
-.row1, .row2, .row3 {
+.row {
   display: table-row;
 }
 
@@ -58,17 +58,8 @@ body.thumbSelected .thumb.selected {
   z-index: 1;
 }
 
-.thumb.row1.selected {
-  height: 100%;
-}
-
-.thumb.row2.selected {
-  height: 100%;
-}
-
-.thumb.row3.selected {
-  height: 100%;
-}
+.selectedRow > .thumb {
+  height: 100% }
 
 .scrim {
   height: 100%;
@@ -143,7 +134,6 @@ body.thumbSelected img {
 #human {
   background-image: url("../images/human_sleeping.jpg");
 }
-
 
 #chipanzee {
   background-image: url("../images/chipanzee_sleeping.jpg");

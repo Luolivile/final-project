@@ -2,19 +2,20 @@
 //get all thumbs
 var thumbs =  document.getElementsByClassName('thumb');
 
-//changes backgorund color on hover
+//changes background color on hover
 for (i=0; i<thumbs.length; i++) {
   thumbs[i].addEventListener('mouseover', function (evt) {
     document.body.style.backgroundColor = evt.currentTarget.dataset.color
   });
 
-
-//changes size on click
+  //changes size on click
   thumbs[i].addEventListener('click', function(){
     //remove class selected
+    //clicked on selected thumb
     if (this.classList.contains('selected')) {
       this.classList.remove('selected');
       document.body.classList.remove('thumbSelected');
+      document.querySelector('.row').classList.remove('rowSelected');
 
     } else {
         var selected = document.querySelector('.selected')
@@ -22,7 +23,7 @@ for (i=0; i<thumbs.length; i++) {
           selected.classList.remove('selected');
         }
         this.classList.add('selected');
-
+        document.querySelector('.row').classList.add('rowSelected');
         document.body.classList.add('thumbSelected');
     }
   })
