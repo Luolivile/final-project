@@ -1,3 +1,4 @@
+
 html, body {
   height: 100%;
   margin: 0;
@@ -27,7 +28,7 @@ footer p {
   color: #a9a9a9;
 }
 
-.row {
+.row1, .row2, .row3 {
   display: table-row;
 }
 
@@ -55,6 +56,18 @@ body.thumbSelected .thumb.selected {
   height: 100%;
   width: 100%;
   z-index: 1;
+}
+
+.thumb.row1.selected {
+  height: 100%;
+}
+
+.thumb.row2.selected {
+  height: 100%;
+}
+
+.thumb.row3.selected {
+  height: 100%;
 }
 
 .scrim {

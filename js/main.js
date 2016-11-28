@@ -1,3 +1,4 @@
+
 //get all thumbs
 var thumbs =  document.getElementsByClassName('thumb');
 
@@ -54,7 +55,7 @@ for (i=0; i<thumbs.length; i++) {
        if (thumbs[i].classList.contains('selected')) {
          thumbs[i].classList.remove('selected');
          if (i-1 <= 0) {
-           var previous = thumbs.length -1  
+           var previous = thumbs.length -1
          } else {
            var previous = i-1
          }
