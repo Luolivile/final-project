@@ -40,12 +40,14 @@ for (i=0; i<thumbs.length; i++) {
       for (i=0; i<thumbs.length; i++) {
         if (thumbs[i].classList.contains('selected')) {
           thumbs[i].classList.remove('selected');
+          this.querySelector('.rowSelected').classList.remove('rowSelected');
           if (i+1 >= thumbs.length) {
             var next = 0
           } else {
             var next = i+1
           }
           thumbs[next].classList.add('selected');
+          this.parentNode.classList.add('rowSelected');
           break;
         }
       }
@@ -55,12 +57,14 @@ for (i=0; i<thumbs.length; i++) {
      for (i = thumbs.length - 1; i >= 0; i--) {
        if (thumbs[i].classList.contains('selected')) {
          thumbs[i].classList.remove('selected');
+         this.querySelector('.rowSelected').classList.remove('rowSelected');
          if (i-1 <= 0) {
            var previous = thumbs.length -1
          } else {
            var previous = i-1
          }
          thumbs[previous].classList.add('selected');
+         this.parentNode.classList.add('rowSelected');
          break;
        }
      }
