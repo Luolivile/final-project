@@ -107,6 +107,7 @@ body.thumbSelected img {
 
 #close {
   position: absolute;
+  color: white;
   top: 70px;
   right: 70px;
   transition: 1s;
@@ -116,12 +117,14 @@ body.thumbSelected img {
   position: absolute;
   right: 70px;
   top: 50%;
+  color: white;
 }
 
 #left {
   position: absolute;
   top: 50%;
   left: 70px;
+  color: white;
 }
 
 #giraffe {
