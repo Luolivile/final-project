@@ -48,8 +48,8 @@ footer p {
 }
 
 body.thumbSelected .thumb:not(.selected) {
-  width: 0;
-  height: 0;
+  width: 0%;
+  height: 0%;
 }
 
 body.thumbSelected .thumb.selected {
