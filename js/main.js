@@ -20,6 +20,7 @@ function goToThumb (direction) {
 
       thumbs[next].classList.add('selected');
       thumbs[next].parentNode.classList.add('rowSelected');
+
       break;
     }
   }
@@ -27,12 +28,12 @@ function goToThumb (direction) {
 
 //changes background color on hover
 for (i=0; i<thumbs.length; i++) {
-  thumbs[i].addEventListener('mouseover', function (evt) {
-    document.body.style.backgroundColor = evt.currentTarget.dataset.color
+  thumbs[i].addEventListener('mouseover', function () {
+    document.body.style.backgroundColor =  this.dataset.color
   });
 
   //changes size on click
-  thumbs[i].addEventListener('click', function(){
+  thumbs[i].addEventListener('click', function () {
     //remove class selected
     //clicked on selected thumb
     if (this.classList.contains('selected')) {
@@ -43,6 +44,7 @@ for (i=0; i<thumbs.length; i++) {
       if (selected !== null) {
         selected.classList.remove('selected');
       }
+
       this.classList.add('selected');
       this.parentNode.classList.add('rowSelected');
       document.body.classList.add('thumbSelected');
